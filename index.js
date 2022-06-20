@@ -43,3 +43,11 @@ newImage(pathWell, "500px", "425px");
 // adding sword
 pathSword = "assets/sword.png";
 newItem(pathSword, "500px", "405px");
+
+// adding shield
+pathShield = "assets/shield.png";
+newItem(pathShield, "165px", "185px");
+
+// adding staff
+pathStaff = "assets/staff.png";
+newItem(pathStaff, "600px", "100px");
