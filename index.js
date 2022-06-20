@@ -9,15 +9,10 @@ function newImage(path, leftPos, bottomPos) {
 }
 
 function newItem(path, leftPos, bottomPos) {
-  let object = document.createElement("img");
-  object.src = path;
-  object.style.position = "fixed";
-  object.style.left = leftPos;
-  object.style.bottom = bottomPos;
+  object = newImage(path, leftPos, bottomPos);
   object.addEventListener("click", function () {
     object.remove();
   });
-  document.body.append(object);
   return object;
 }
 
