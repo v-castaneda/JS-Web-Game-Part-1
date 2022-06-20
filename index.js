@@ -8,6 +8,19 @@ function newImage(path, leftPos, bottomPos) {
   return object;
 }
 
+function newItem(path, leftPos, bottomPos) {
+  let object = document.createElement("img");
+  object.src = path;
+  object.style.position = "fixed";
+  object.style.left = leftPos;
+  object.style.bottom = bottomPos;
+  object.addEventListener("click", function () {
+    object.remove();
+  });
+  document.body.append(object);
+  return object;
+}
+
 //adding green monster image
 pathGreenCharacter = "assets/green-character.gif";
 newImage(pathGreenCharacter, "100px", "100px");
@@ -33,13 +46,8 @@ pathWell = "assets/well.png";
 newImage(pathWell, "500px", "425px");
 
 // adding sword
-let sword = document.createElement("img");
-sword.src = "assets/sword.png";
-sword.position = "fixed";
-sword.left = "500px";
-sword.bottom = "405px";
-document.body.append(sword);
-
+pathSword = "assets/sword.png";
+newItem(pathSword, "500px", "405px");
 sword.addEventListener("click", function () {
   sword.remove();
 });
