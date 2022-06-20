@@ -9,8 +9,8 @@ function newImage(path, leftPos, bottomPos) {
 }
 
 function newItem(path, leftPos, bottomPos) {
-  object = newImage(path, leftPos, bottomPos);
-  object.addEventListener("click", function () {
+  let object = newImage(path, leftPos, bottomPos);
+  object.addEventListener("dblclick", function () {
     object.remove();
   });
   return object;
