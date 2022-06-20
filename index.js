@@ -43,6 +43,3 @@ newImage(pathWell, "500px", "425px");
 // adding sword
 pathSword = "assets/sword.png";
 newItem(pathSword, "500px", "405px");
-sword.addEventListener("click", function () {
-  sword.remove();
-});
